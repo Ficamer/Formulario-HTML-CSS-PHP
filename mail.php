@@ -10,6 +10,9 @@
             $carta .= "Correo: ".$email."\n";
             $carta .= "Mensaje: ".$texto;
             $mail = mail($destinatario,$asunto,$carta); //Enviando MSJ
+            if ($mail){
+                echo "<h4>Este mail se envio correctamente</h4>";
+            }
         }
     }
 ?>
